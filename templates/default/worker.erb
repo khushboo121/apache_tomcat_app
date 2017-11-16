@@ -1,0 +1,16 @@
+# /etc/libapache2-mod-jk/worker.property file defined by automation
+worker.list=loadbalancer,status
+worker.server1.port=8108
+worker.server1.host=localhost
+worker.server1.type=ajp13
+
+worker.server2.port=8109
+worker.server2.host=localhost
+worker.server2.type=ajp13
+
+worker.server1.lbfactor=1
+worker.server2.lbfactor=1
+worker.loadbalancer.type=lb
+worker.loadbalancer.balance_workers=server1,server2
+
+worker.status.type=status
