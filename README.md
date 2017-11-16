@@ -11,6 +11,9 @@ recipe::load_balancer_setup
 recipe::start_service
 - start apache2, tomcat7, mysql service
 
+Note:
+Followed https://www.systemcodegeeks.com/web-servers/apache/set-tomcat-apache-mod_jk-cluster/ so packages installed in the cookbook as per Ubuntu.
+
 Usage
 -----
 Just include `apache_tomcat_app` in your node's `run_list`:
