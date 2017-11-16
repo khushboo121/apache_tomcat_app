@@ -16,10 +16,4 @@ RSpec.configure do |config|
 
   # Specify the path to a local JSON file with Ohai data
   # config.path = 'ohai.json'
-
-  # Specify the operating platform to mock Ohai data from
-  config.platform = 'aix'
-
-  # Specify the operating version to mock Ohai data from
-  config.version = '7.1'
 end
