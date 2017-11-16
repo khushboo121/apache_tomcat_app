@@ -66,13 +66,10 @@ ruby_block 'Configure Apache Web Server to forward requests' do
     end
 end
 
-service_list = node['apache_tomcat_app'] ['service_list']
-
-service_list.each do |services|
+%(apache2 tomcat) do |services|
   service services do 
     action: restart
   end 
 end  
-
 # installing mysql server 
 package 'mysql-server-5.6'
